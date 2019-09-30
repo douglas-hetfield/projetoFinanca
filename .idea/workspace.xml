@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a0d6fbb-d8f9-43f5-8de8-b4e2787a591c" name="Default" comment="" />
+    <list default="true" id="3a0d6fbb-d8f9-43f5-8de8-b4e2787a591c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Trabalho.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trabalho.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXEMPLO1/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO1/Controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXEMPLO1/Dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO1/Dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXEMPLO1/View.py" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO1/View.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXEMPLO1/pessoa.db" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO1/pessoa.db" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +24,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RX6PQeprZcvBKkaAxbp1cYaDuW" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -40,9 +53,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EXEMPLO1" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EXEMPLO1/Main.py" />
@@ -94,5 +107,18 @@
       <updated>1569709355920</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

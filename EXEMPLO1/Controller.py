@@ -1,6 +1,6 @@
 from EXEMPLO1.View import ViewPessoa
 from EXEMPLO1.Dao import GerenteBanco
-from EXEMPLO1.Model import Pessoa
+from EXEMPLO1.Financa import Financa
 
 class Controlador(object):
     _pessoaView_    = None
@@ -13,13 +13,15 @@ class Controlador(object):
         self._gerenteBanco_.armazenaFinanca(self._pessoaLida_)
         self._pessoaView_.adicionaFinanca(self._pessoaLida_)
         self._listaCorrente_.append(self._pessoaLida_)
+        self._pessoaView_.limpar()
 
     def recuperaPessoas(self):
         lista = self._gerenteBanco_.retornaListaPessoas()
         for linha in lista:
-            pessoa = Pessoa(linha[0],linha[1],linha[2])
-            self._pessoaView_.adicionaFinanca(pessoa)
-            self._listaCorrente_.append(pessoa)
+            # print(str(linha[0]) + "  -   "+str(linha[1])+"    -   "+str(linha[2])+"   =    "+str(linha[3])+"   --  "+str(linha[4]))
+            financa = Financa(linha[0],linha[1],linha[2],linha[3],linha[4])
+            self._pessoaView_.adicionaFinanca(financa)
+            self._listaCorrente_.append(financa)
 
     def mediaSalarios(self):
         media = 0

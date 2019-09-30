@@ -37,6 +37,7 @@ class GerenteBanco(object):
         cursor.execute(self._sqlInsereTabela1_,registro)
         self._conexao_.commit()
         cursor.close()
+
     def retornaListaPessoas(self):
         # OBS: a virgula vazia é necessaria para diferenciar o
         # () matematico do () de tupla
@@ -46,6 +47,7 @@ class GerenteBanco(object):
         self._conexao_.commit()
         cursor.close()
         return listaTuplas
+
     def retornaListaPessoasNome(self,pessoa):
         # OBS: a virgula vazia é necessaria para diferenciar o
         # () matematico do () de tupla
