@@ -14,7 +14,7 @@ class Financa(object):
         self._total_        = total
 
     def __str__(self) -> str:
-        return self._nomeGasto__
+        return self._nomeGasto_
 
     def linhaArquivo(self):
         linha = "Nome do gasto: " + self._nomeGasto__ + " | Nº de prestação: " + str(self._numPrestacao__) + " | Mês inícial: " + str(self._mesInicial__) + " | Mês atual: " + str(self._mesAtual_) + "Total do mês: " + str(self._totalDoMes_) + " | Total: " + str(self._total_) + "\n"

@@ -3,20 +3,22 @@ from EXEMPLO1.Model import Pessoa
 class GerenteBanco(object):
     _nomeBanco_ = "pessoa.db"
     _conexao_ = None
-    _sqlTabela1_          = "CREATE TABLE PESSOA(" \
-                                         "NOME    TEXT, " \
-                                         "SALARIO REAL, " \
-                                         "IDADE   INTEGER)"
+    _sqlTabela1_          = "CREATE TABLE FINANCA(" \
+                                         "NOMEGASTO    TEXT, " \
+                                         "NUMPARCELA INTEGER, " \
+                                         "MESINICIAL INTEGER, " \
+                                         "MESATUAL INTEGER, " \
+                                         "TOTAL REAL) " \
 
-    _sqlInsereTabela1_    = "INSERT INTO PESSOA(NOME, SALARIO , IDADE) " \
-                                         "VALUES(?,?,?)"
+    _sqlInsereTabela1_    = "INSERT INTO FINANCA(NOMEGASTO, NUMPARCELA , MESINICIAL, MESATUAL, TOTAL) " \
+                                         "VALUES(?,?,?,?,?)"
 
-    _sqlConsultaTabela11_ = "SELECT NOME, SALARIO , IDADE " \
-                            "FROM PESSOA"
+    _sqlConsultaTabela11_ = "SELECT NOMEGASTO, NUMPARCELA , MESINICIAL, MESATUAL, TOTAL " \
+                            "FROM FINANCA"
 
-    _sqlConsultaTabela12_ = "SELECT NOME, SALARIO , IDADE) " \
-                            "FROM PESSOA" \
-                            "WHERE NOME = ?"
+    _sqlConsultaTabela12_ = "SELECT NOMEGASTO, NUMPARCELA , MESINICIAL, MESATUAL, TOTAL " \
+                            "FROM FINANCA" \
+                            "WHERE NOMEGASTO = ?"
 
     def __init__(self) -> None:
         super().__init__()
@@ -28,8 +30,9 @@ class GerenteBanco(object):
         except:
             print("Banco já criado - Criacao desconsiderada")
         cursor.close()
-    def armazenaFinanca(self,pessoa):
-        registro =(pessoa._nomePessoa_, pessoa._salarioPessoa_, pessoa._idadePessoa_)
+
+    def armazenaFinanca(self,financa):
+        registro =(financa._nomeGasto_, financa._numPrestacao_, financa._mesInicial_, financa._mesAtual_, financa._total_)
         cursor = self._conexao_.cursor()
         cursor.execute(self._sqlInsereTabela1_,registro)
         self._conexao_.commit()
